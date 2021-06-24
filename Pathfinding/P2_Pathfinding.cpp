@@ -80,7 +80,6 @@ PathResult AStarPather::compute_path(PathRequest &request)
             IMPOSSIBLE - a path from start to goal does not exist, do not add start position to path
     */
 
-    // WRITE YOUR CODE HERE
 	GridPos start = terrain->get_grid_position(request.start);
 	GridPos goal = terrain->get_grid_position(request.goal);
 	GridPos findParent;
@@ -654,12 +653,4 @@ PathResult AStarPather::compute_path(PathRequest &request)
 	hasInitializedOnce = false;
 	return PathResult::IMPOSSIBLE;
 	
-    //// Just sample code, safe to delete
-    //GridPos start = terrain->get_grid_position(request.start);
-    //GridPos goal = terrain->get_grid_position(request.goal);
-    //terrain->set_color(start, Colors::Orange);
-    //terrain->set_color(goal, Colors::Orange);
-    //request.path.push_back(request.start);
-    //request.path.push_back(request.goal);
-    //return PathResult::COMPLETE;
 }
