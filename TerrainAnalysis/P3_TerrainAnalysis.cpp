@@ -21,7 +21,6 @@ float distance_to_closest_wall(int row, int col)
         in the global terrain to determine if a cell is a wall or not.
     */
 
-    // WRITE YOUR CODE HERE
 	const int height = terrain->get_map_height();
 	const int width = terrain->get_map_width();
 
@@ -77,7 +76,6 @@ bool is_clear_path(int row0, int col0, int row1, int col1)
         is_wall member function in the global terrain to determine if a cell is a wall or not.
     */
 
-    // WRITE YOUR CODE HERE
 	const int height = terrain->get_map_height();
 	const int width = terrain->get_map_width();
 	const int split = 20;
@@ -158,7 +156,6 @@ void analyze_openness(MapLayer<float> &layer)
         distance_to_closest_wall helper function.
     */
 
-    // WRITE YOUR CODE HERE
 	const int height = terrain->get_map_height();
 	const int width = terrain->get_map_width();
 
@@ -187,7 +184,6 @@ void analyze_visibility(MapLayer<float> &layer)
         helper function.
     */
 
-    // WRITE YOUR CODE HERE
 	const int height = terrain->get_map_height();
 	const int width = terrain->get_map_width();
 
@@ -226,7 +222,6 @@ void analyze_visble_to_cell(MapLayer<float> &layer, int row, int col)
         helper function.
     */
 
-    // WRITE YOUR CODE HERE
 	const int height = terrain->get_map_height();
 	const int width = terrain->get_map_width();
 
@@ -351,7 +346,6 @@ void analyze_agent_vision(MapLayer<float> &layer, const Agent *agent)
 		helper function.
 	*/
 
-	// WRITE YOUR CODE HERE
 	const int height = terrain->get_map_height();
 	const int width = terrain->get_map_width();
 	const auto pos = agent->get_position();
@@ -426,7 +420,6 @@ void propagate_solo_occupancy(MapLayer<float> &layer, float decay, float growth)
         the given layer;
     */
 
-    // WRITE YOUR CODE HERE
 	const int height = terrain->get_map_height();
 	const int width = terrain->get_map_width();
 
@@ -513,7 +506,6 @@ void propagate_dual_occupancy(MapLayer<float> &layer, float decay, float growth)
         the given layer;
     */
 
-    // WRITE YOUR CODE HERE
 
 	const int height = terrain->get_map_height();
 	const int width = terrain->get_map_width();
@@ -591,7 +583,6 @@ void normalize_solo_occupancy(MapLayer<float> &layer)
         range of [0, 1].
     */
 
-    // WRITE YOUR CODE HERE
 	const int height = terrain->get_map_height();
 	const int width = terrain->get_map_width();
 	float findMax = FLT_MIN;
@@ -624,7 +615,6 @@ void normalize_dual_occupancy(MapLayer<float> &layer)
         (so that it remains a negative number).  This will keep the values in the range of [-1, 1].
     */
 
-    // WRITE YOUR CODE HERE
 	const int height = terrain->get_map_height();
 	const int width = terrain->get_map_width();
 	float findMax = FLT_MIN;
@@ -667,7 +657,6 @@ void enemy_field_of_view(MapLayer<float> &layer, float fovAngle, float closeDist
         as a fov cone.
     */
 	
-    // WRITE YOUR CODE HERE
 	const int height = terrain->get_map_height();
 	const int width = terrain->get_map_width();
 	const auto pos = enemy->get_position();
@@ -770,7 +759,6 @@ bool enemy_seek_player(MapLayer<float> &layer, AStarAgent *enemy)
         Return whether a target cell was found.
     */
 
-    // WRITE YOUR CODE HERE
 	const int height = terrain->get_map_height();
 	const int width = terrain->get_map_width();
 

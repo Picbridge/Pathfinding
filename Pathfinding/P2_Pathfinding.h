@@ -6,7 +6,7 @@ struct Node
 	float given;
 	GridPos parentPos;
 	GridPos position;
-	//bool isOnOpenList;
+
 	bool operator == (const Node& rhs)
 	{
 		if (this->position == rhs.position)
